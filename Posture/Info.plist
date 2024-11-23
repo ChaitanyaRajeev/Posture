@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Motion usage permission -->
+    <key>NSMotionUsageDescription</key>
+    <string>This app needs access to motion data from your AirPods to monitor your neck posture.</string>
+    
+    <!-- Bluetooth permissions -->
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>We need Bluetooth access to connect to your AirPods for posture monitoring.</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>We need to connect to your AirPods to monitor your neck posture.</string>
+    
+    <!-- Add other existing keys here -->
+    <!-- Notification permissions -->
+    <key>NSUserNotificationAlertStyle</key>
+    <string>alert</string>
+    
+    <!-- Required for modern notifications -->
+    <key>NSSupportsAutomaticTermination</key>
+    <true/>
+    <key>LSBackgroundOnly</key>
+    <false/>
+</dict>
+</plist>
