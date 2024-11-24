@@ -400,7 +400,12 @@ class BluetoothManager: NSObject, ObservableObject, CBCentralManagerDelegate {
             direction = deviation > 0 ? .forward : .backward
         }
         
-        return PostureStatus(angle: absoluteDeviation, direction: direction, rawAngle: rawAngle)
+        return PostureStatus(
+            angle: absoluteDeviation,
+            direction: direction,
+            rawAngle: rawAngle,
+            yawAngle: 0.0
+        )
     }
     
     // MARK: - Public Methods

@@ -92,10 +92,7 @@ struct ContentView: View {
         } message: {
             Text("Please sit in a neutral position with your head straight and press Start to begin calibration.")
         }
-        .sheet(isPresented: $showingDashboard) {
-            DashboardView()
-                .environmentObject(bluetoothManager)
-        }
+
     }
     
     private var buttonBackground: Color {
